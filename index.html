@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="min-h-screen">
-    <header class="h-8 w-screen bg-slate-300"></header>
+    <header class="sticky top-0 w-screen backdrop-blur-xl">
+      <nav
+        class="container py-3 px-6 m-auto flex justify-between items-center max-w-3xl min-w-"
+      >
+        <div class="flex items-center gap-2">
+          <h1 class="text-2xl font-bold">최은</h1>
+          <p class="text-sm font-semibold text-gray-600">프런트개발자</p>
+        </div>
+        <div class="flex items-center gap-3 font-semibold">
+          <a class="hover:text-sky-500 transition-colors">홈</a>
+          <a class="hover:text-sky-500 transition-colors">소개</a>
+          <a class="hover:text-sky-500 transition-colors">기술</a>
+          <a class="hover:text-sky-500 transition-colors">프로젝트</a>
+          <a class="hover:text-sky-500 transition-colors">연락처</a>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-200 focus:outline-none focus:ring focus:ring-blue-300"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
     <main class="container bg-orange-200 h-full px-6 py-12 max-w-3xl m-auto">
       <section class="h-60 bg-red-400">
         <h2 class="text-2xl">홈</h2>
