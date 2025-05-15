@@ -8,5 +8,8 @@
     "strings": true
   },
   "css.validate": false,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
