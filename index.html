@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,6 +12,11 @@
       darkMode: 'selector'
     };
   </script>
+  <style>
+    [id] {
+      scroll-margin-top: 64px;
+    }
+  </style>
 </head>
 
 <body class="h-auto dark:bg-gray-900 dark:text-white bg-gray-100 text-gray-900">
@@ -22,11 +27,11 @@
         <p class="text-sm font-semibold text-gray-600">프런트개발자</p>
       </div>
       <div class="hidden md:flex items-center gap-3 font-semibold dark:text-gray-200">
-        <a class="hover:text-sky-500 transition-colors">홈</a>
-        <a class="hover:text-sky-500 transition-colors">소개</a>
-        <a class="hover:text-sky-500 transition-colors">기술</a>
-        <a class="hover:text-sky-500 transition-colors">프로젝트</a>
-        <a class="hover:text-sky-500 transition-colors">연락처</a>
+        <a href="#home" class="hover:text-sky-500 transition-colors">홈</a>
+        <a href="#about" class="hover:text-sky-500 transition-colors">소개</a>
+        <a href="#skill" class="hover:text-sky-500 transition-colors">기술</a>
+        <a href="#project" class="hover:text-sky-500 transition-colors">프로젝트</a>
+        <a href="#contact" class="hover:text-sky-500 transition-colors">연락처</a>
         <button id="darkModeToggle"
           class="h-10 w-10 rounded-full dark:bg-gray-300 bg-gray-200 focus:outline-none focus:ring focus:ring-blue-300">
           <i class="fas fa-moon dark:text-yellow-500"></i>
@@ -42,11 +47,11 @@
     class="md:hidden translate-x-full transition-transform duration-300 fixed block inset-y-0 right-0 w-64 p-4 bg-white dark:bg-gray-700">
     <button id="menuClose" class="mb-5"><i class="fas fa-times text-2xl"></i></button>
     <nav class="flex flex-col space-y-4">
-      <a class="hover:text-sky-500 transition-colors">홈</a>
-      <a class="hover:text-sky-500 transition-colors">소개</a>
-      <a class="hover:text-sky-500 transition-colors">기술</a>
-      <a class="hover:text-sky-500 transition-colors">프로젝트</a>
-      <a class="hover:text-sky-500 transition-colors">연락처</a>
+      <a href="#home" class="hover:text-sky-500 transition-colors">홈</a>
+      <a href="#about" class="hover:text-sky-500 transition-colors">소개</a>
+      <a href="#skill" class="hover:text-sky-500 transition-colors">기술</a>
+      <a href="#project" class="hover:text-sky-500 transition-colors">프로젝트</a>
+      <a href="#contact" class="hover:text-sky-500 transition-colors">연락처</a>
       <button id="darkModeToggle"
         class="h-10 w-3/4  rounded-full dark:bg-gray-300 bg-gray-200 focus:outline-none focus:ring focus:ring-blue-300">
         <i class="fas fa-moon dark:text-yellow-500"></i>
@@ -56,7 +61,7 @@
 
 
   <main class="container px-6 py-12 max-w-3xl m-auto">
-    <section class="mb-7 flex flex-col md:flex-row">
+    <section id="home" class="mb-7 flex flex-col md:flex-row">
       <div class="shrink-0 mb-6 flex justify-center">
         <img class="h-44 w-44 rounded-full border-2 object-cover"
           src="https://api.dicebear.com/9.x/adventurer/svg?seed=Jack" alt="avatar" />
@@ -72,7 +77,7 @@
         </p>
       </div>
     </section>
-    <section class="mb-7">
+    <section id="about" class="mb-7">
       <h2 class="text-2xl font-bold mb-6">소개</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <article
@@ -92,7 +97,7 @@
         </article>
       </div>
     </section>
-    <section class="mb-7">
+    <section id="skill" class="mb-7">
       <h2 class="text-2xl font-bold mb-6">기술</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div class="dark:bg-gray-800 rounded-md shadow-md p-4 flex flex-col items-center bg-slate-200">
@@ -117,7 +122,7 @@
         </div>
       </div>
     </section>
-    <section class="mb-7">
+    <section id="project" class="mb-7">
       <h2 class="text-2xl font-bold mb-6">프로젝트</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <article class="hover:scale-105 duration-300 dark:bg-gray-800 bg-slate-300 rounded-lg overflow-hidden">
@@ -182,7 +187,7 @@
         </article>
       </div>
     </section>
-    <section>
+    <section id="contact">
       <h2 class=" text-2xl font-bold mb-6">연락처</h2>
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div>
